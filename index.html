@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legions | Сообщество Kali Linux</title>
+    <style>
+        :root {
+            --primary: #2b2d42;
+            --secondary: #8d99ae;
+            --accent: #ef233c;
+            --light: #edf2f4;
+            --dark: #1a1a2e;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary);
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: var(--accent);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #d90429;
+            transform: translateY(-3px);
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            flex-basis: 30%;
+            background-color: var(--primary);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: var(--primary);
+            color: var(--light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            
+            .feature-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legions</h1>
+        <p>Сообщество этичного хакинга и Kali Linux</p>
+    </header>
+    
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#projects">Проекты</a>
+        <a href="#resources">Ресурсы</a>
+        <a href="#join">Присоединиться</a>
+    </nav>
+    
+    <div class="container">
+        <section class="hero">
+            <h2>Стань частью легиона</h2>
+            <p>Изучай кибербезопасность, тестируй системы и развивай навыки этичного хакинга вместе с нами</p>
+            <a href="#join" class="cta-button">Вступить в сообщество</a>
+        </section>
+        
+        <section id="about">
+            <h2>О Legions</h2>
+            <p>Legions - это сообщество энтузиастов кибербезопасности, специализирующихся на Kali Linux и этичном хакинге. Мы объединяем профессионалов и новичков для обмена знаниями и проведения исследований в области информационной безопасности.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Наши проекты</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Обучение Kali Linux</h3>
+                    <p>Полные руководства по работе с инструментами Kali Linux для начинающих и продвинутых пользователей.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>CTF команда</h3>
+                    <p>Участие в Capture The Flag соревнованиях и внутренние тренировки.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Исследования уязвимостей</h3>
+                    <p>Поиск и документирование уязвимостей в открытом ПО.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Полезные ресурсы</h2>
+            <ul>
+                <li>Наша библиотека инструментов Kali Linux</li>
+                <li>База знаний по пентесту</li>
+                <li>Форум для обсуждения</li>
+                <li>Канал в Telegram с новостями</li>
+            </ul>
+        </section>
+        
+        <section id="join">
+            <h2>Как присоединиться</h2>
+            <p>Мы всегда рады новым участникам! Для вступления в Legions:</p>
+            <ol>
+                <li>Подпишитесь на наш Telegram-канал</li>
+                <li>Заполните анкету участника</li>
+                <li>Посетите вводное собрание</li>
+            </ol>
+            <a href="#" class="cta-button">Заполнить анкету</a>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 Legions | Сообщество Kali Linux и этичного хакинга</p>
+        <p>Контакты: legions@protonmail.com</p>
+    </footer>
+    
+    <script>
+        // Простая анимация при прокрутке
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Анимация карточек
+        const featureCards = document.querySelectorAll('.feature-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        featureCards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+  </html>
